@@ -19,48 +19,49 @@ import java.util.Map;
 public class MessageBean implements Serializable {
     
     private String msg;
-    private String saudacao; 
+    private String saudacao;
+    private String tratamento;
     private int hora;
     private Map<String,String[]> saudacoesMap = new HashMap<String,String[]>();
         
     public MessageBean() {
-        hora = LocalTime.now().getHour();
+        this.hora = LocalTime.now().getHour();
         String[] saudacoesPt = new String[4];
         saudacoesPt[0] = "Alô!";
         saudacoesPt[1] = "Bom dia!";
         saudacoesPt[2] = "Boa tarde!";
         saudacoesPt[3] = "Boa noite!";
-        saudacoesMap.put("pt",saudacoesPt);
+        this.saudacoesMap.put("pt",saudacoesPt);
         String[] saudacoesEn = new String[4];
         saudacoesEn[0] = "Hello!";
         saudacoesEn[1] = "Good morning!";
         saudacoesEn[2] = "Good afternoon!";
         saudacoesEn[3] = "Good night!";
-        saudacoesMap.put("en",saudacoesEn);
+        this.saudacoesMap.put("en",saudacoesEn);
         String[] saudacoesFr = new String[4];
         saudacoesFr[0] = "Bonjour!";
         saudacoesFr[1] = "Bonjour!";
         saudacoesFr[2] = "Bon après-midi!";
         saudacoesFr[3] = "Bonne nuit!";
-        saudacoesMap.put("fr",saudacoesFr);
+        this.saudacoesMap.put("fr",saudacoesFr);
         String[] saudacoesDe = new String[4];
         saudacoesDe[0] = "Hallo!";
         saudacoesDe[1] = "Guten Morgen!";
         saudacoesDe[2] = "Guten Tag!";
         saudacoesDe[3] = "Gute Nacht!";
-        saudacoesMap.put("de",saudacoesDe);
+        this.saudacoesMap.put("de",saudacoesDe);
         String[] saudacoesIt = new String[4];
         saudacoesIt[0] = "Ciao!";
         saudacoesIt[1] = "Buongiorno!";
         saudacoesIt[2] = "Buon pomeriggio!";
         saudacoesIt[3] = "Buona Notte!";
-        saudacoesMap.put("it",saudacoesIt);
+        this.saudacoesMap.put("it",saudacoesIt);
         String[] saudacoesSe = new String[4];
         saudacoesSe[0] = "Hej!";
         saudacoesSe[1] = "God morgon!";
         saudacoesSe[2] = "God eftermiddag!";
         saudacoesSe[3] = "Godnatt!";
-        saudacoesMap.put("se",saudacoesSe);
+        this.saudacoesMap.put("se",saudacoesSe);
     }
     
     public String getMsg() {
@@ -85,4 +86,13 @@ public class MessageBean implements Serializable {
             this.saudacao = saudacoesMap.get(value)[1];
         }
     }
+
+    public String getTratamento() {
+        return tratamento;
+    }
+
+    public void setTratamento(String tratamento) {
+        this.tratamento = tratamento;
+    }
+    
 }
