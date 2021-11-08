@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Formulário de HelloWorld (usando o sayhello.jsp)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/global.css">
+        <link rel="stylesheet" href="./styles/helloform.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Formulário de HelloWorld usando o jsp</h1>
+            <form class="form" action="sayhello.jsp" method="post">
+                <div class="form-control control-radio">
+                    <label for="lang">Idioma:</label>
+                    <div class="radio-group">
+                        <input type="radio" name="lang" value="pt" checked> Português</input>
+                        <input type="radio" name="lang" value="en"> Inglês</input>
+                        <input type="radio" name="lang" value="fr"> Francês</input>
+                        <input type="radio" name="lang" value="de"> Alemão</input>
+                        <input type="radio" name="lang" value="it"> Italiano</input>
+                        <input type="radio" name="lang" value="se"> Sueco</input>
+                    </div>
+                </div>
+                <div class="form-control control-input">
+                    <label for="lang">Nome:</label>
+                    <input type="text" name="nome"/>
+                </div>
+                <button class="button" type="submit">Cumprimentar</button>
+            </form>
+        </div>
+        
+
+    </body>
+</html>
