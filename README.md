@@ -55,5 +55,5 @@ Serviço de Plataforma: <img src="https://user-images.githubusercontent.com/3225
 [Jstl]: <https://docs.oracle.com/javaee/5/jstl/1.1/docs/tlddocs/c/tld-summary.html/>
 [Maven]: <https://maven.apache.org/>
 [Java]: <https://www.java.com/pt-BR/>
-[Heroku]: <https://www.heroku.com/>
+[Heroku]: <https://www.heroku.com/platform/>
 
